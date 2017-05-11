@@ -1,0 +1,89 @@
+<!-- ੴ ੨੦੧੭.੫.੧੦ ਸੁਭਮਸਤੁ-->
+<html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!-- The original source code was modified -->
+<head>
+<title>
+	Problem loading page
+</title>
+
+<style>
+    html {
+        font: message-box;
+        color: var(--in-content-page-color);
+    }
+    body {
+        background-image: linear-gradient(-45deg, #eeeeee, #eeeeee 33%, #fbfbfb 33%, #fbfbfb 66%, #eeeeee 66%, #eeeeee);
+        background-size: 64px 32px;
+        background-repeat: repeat-x;
+        padding: 75px 0;
+        min-width: 13em;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        min-height: 100vh;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-inline-start: calc(48px + 4.6em);
+        padding-inline-end: 48px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        font-weight: lighter;
+        line-height: 1.2;
+        color: var(--in-content-text-color);
+        margin: 0;
+        margin-bottom: .5em;
+    }
+
+    .text {
+        font-size: 15px;
+        font-weight: normal;
+    }
+
+    @media screen and (min-width: 1px) and (max-width: 680px) {
+        #top-of-text {
+            padding-top: 100px;
+        }
+        #warning {
+            display: none;
+        }
+    }
+</style>
+</head>
+
+<div id="main" style="padding: 80px;display: inline-block" class="text">
+
+    <!-- (!) icon -->
+    <h1 id='warning' style='
+        background-image: url("chrome://global/skin/icons/info.svg");
+        background-position: left 0;
+        background-repeat: no-repeat;
+        background-size: 1.6em;
+        margin-inline-start: -2.3em;
+        padding-inline-start: 2.3em;
+        font-size: 2.5em;
+        width: 200px;
+        height: 100px;'>
+        &nbsp;&nbsp;&nbsp;
+    </h1>
+
+    <div id='top-of-text' style="margin-top: -114px">
+    <h1>Server not found</h1>
+
+    <!-- <hr> type bar -->
+    <h1 style="border-bottom: 1px solid #C1C1C1;font-size: inherit;padding-bottom: 0.4em;"></h1>
+
+    Firefox can't find the server at requested address.<br><br />
+    Check the address for typing errors such as <strong>ww</strong>.example.com instead of <strong>www</strong>.example.com<br />
+    If you are unable to load any pages, check your computer's network connection.<br />
+    If your computer or network is protected by a firewall or proxy, make sure that Firefox Developer Edition is permitted to access the Web.<br/>
+    </div><!-- #top-of-text$ -->
+
+ </div>
+</html>
